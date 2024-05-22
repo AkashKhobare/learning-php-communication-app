@@ -5,7 +5,7 @@ include ("../../../../db/db.php");
 session_start();
 
 if (!$_SESSION['email'] && !$_SESSION['token']) {
-    header("location: " . $_GLOBAL['app_root_host'] . "login/login.php");
+    header("location: " . $_GLOBAL['app_root_host'] . "../home/welcome.php");
 }
 
 $_GLOBAL['app_root'] = $_SERVER['DOCUMENT_ROOT'] . "/training/php/project/communication";
